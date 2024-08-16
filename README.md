@@ -13,8 +13,6 @@ Hi, I'm Brock Altug, a passionate developer who is always eager to learn and gro
 
 ## Features
 
-- **Responsive Design:** The portfolio is fully responsive, ensuring an optimal viewing experience across all devices.
-- **Modern Layout:** Utilizes a clean and modern layout with a focus on simplicity and user experience.
 - **Project Showcase:** Includes a dedicated section to showcase my most significant projects, complete with images and links to live demos.
 - **Contact Information:** Provides easy access to my email and GitHub profile for potential employers or collaborators.
 
