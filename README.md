@@ -39,3 +39,5 @@ Hi, I'm Brock Altug, a passionate developer who is always eager to learn and gro
 - **CSS 🎨 :** For the design, layout, and responsive behavior.
 - **JavaScript ⚙️ :** For any interactive elements.
 - **GitHub Pages 🌐 :** For hosting the live portfolio.
+
+https://brockaltug.github.io/my-portfolio/
