@@ -1,3 +1,13 @@
+/* added root for universal styling */
+:root {
+    --primary-bg-color: #1a1a2e; /* Dark background color */
+    --primary-text-color: #fff; /* White text color */
+    --accent-color: #ff9429; /* Accent color for hover effects and borders */
+    --body-bg-color: #f7f9fc; /* Light background color for the body */
+    --body-text-color: #333; /* Dark text color for body */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color */
+}
+
 /* General Reset */
 * {
     box-sizing: border-box;
@@ -9,17 +19,17 @@
 /* Body Style */
 body {
     line-height: 1.6;
-    background-color: #f7f9fc;
-    color: #333;
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
 }
 
 /* Header and Navigation */
 header {
-    background-color: #1a1a2e;
-    color: #fff;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
     padding: 20px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 nav ul {
@@ -34,14 +44,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--primary-text-color);
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff9429;
+    color: var(--accent-color);
 }
 
 /* Header Content */
@@ -55,7 +65,7 @@ nav ul li a:hover {
     border-radius: 50%;
     width: 120px;
     height: 120px;
-    border: 4px solid #ff9429;
+    border: 4px solid var(--accent-color);
     margin-top: 10px;
 }
 
@@ -71,7 +81,7 @@ main {
 
 h2 {
     font-size: 2rem;
-    color: #1a1a2e;
+    color: var(--primary-bg-color);
     margin-bottom: 20px;
 }
 
@@ -99,24 +109,29 @@ p {
 .project img {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .project h3 {
     margin-top: 15px;
     font-size: 1.25rem;
-    color: #333;
+    color: var(--body-text-color);
+    text-decoration: none; /* ensure no underline in h3 captions */
+}
+
+.project a {
+    text-decoration: none; /* remove underline from all anchor tags inside projects */
 }
 
 .project:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 16px #ff9429;
+    box-shadow: 0 8px 16px var(--accent-color);
 }
 
 /* Footer */
 footer {
-    background-color: #1a1a2e;
-    color: #fff;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
     text-align: center;
     padding: 15px 0;
     font-size: 0.9rem;
