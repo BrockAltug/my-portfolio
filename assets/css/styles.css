@@ -2,11 +2,9 @@
 :root {
     --primary-bg-color: #1a1a2e; /* Dark background color */
     --primary-text-color: #fff; /* White text color */
-    --accent-color: #ff9429; /* Accent color for hover effects and borders */
-    --body-bg-color: #f7f9fc; /* Light background color for the body */
-    --body-text-color: #333; /* Dark text color for body */
-    --shadow-color: rgba(0, 0, 0, 0.1); /* Shadow color */
-}
+    --accent-color: #d88a23; /* Accent color for hover effects and borders */
+    --body-bg-color: #3c414798; /* Light background color for the body */
+    --body-text-color: #333; /* Dark text color for body */}
 
 /* General Reset */
 * {
@@ -126,6 +124,20 @@ p {
 .project:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px var(--accent-color);
+}
+
+.content-section address p a {
+    color: var(--body-text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.content-section address p {
+    font-weight: 600;
+}
+
+.content-section address p a:hover {
+    color: var(--accent-color);
 }
 
 /* Footer */
