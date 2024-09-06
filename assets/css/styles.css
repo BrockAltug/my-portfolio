@@ -1,10 +1,12 @@
 /* added root for universal styling */
 :root {
-    --primary-bg-color: #1a1a2e; /* Dark background color */
-    --primary-text-color: #fff; /* White text color */
-    --accent-color: #d88a23; /* Accent color for hover effects and borders */
-    --body-bg-color: #3c414798; /* Light background color for the body */
-    --body-text-color: #333; /* Dark text color for body */}
+    --primary-bg-color: #0b1a33; /* Dark blue background color */
+    --primary-text-color: #e0f7fa; /* Light cyan text color */
+    --accent-color: #4fd1c5; /* Cool teal accent color for hover effects and borders */
+    --body-bg-color: #121212; /* Very dark background color for the body */
+    --body-text-color: #b0bec5; /* Light gray text color for body */
+    --shadow-color: rgba(0, 128, 128, 0.3); /* Cool teal shadow color */
+}
 
 /* General Reset */
 * {
@@ -79,7 +81,7 @@ main {
 
 h2 {
     font-size: 2rem;
-    color: var(--primary-bg-color);
+    color: var(--primary-text-color);
     margin-bottom: 20px;
 }
 
@@ -113,12 +115,12 @@ p {
 .project h3 {
     margin-top: 15px;
     font-size: 1.25rem;
-    color: var(--body-text-color);
-    text-decoration: none; /* ensure no underline in h3 captions */
+    color: var(--primary-text-color);
+    text-decoration: none; /* Ensure no underline in h3 captions */
 }
 
 .project a {
-    text-decoration: none; /* remove underline from all anchor tags inside projects */
+    text-decoration: none; /* Remove underline from all anchor tags inside projects */
 }
 
 .project:hover {
@@ -127,7 +129,7 @@ p {
 }
 
 .content-section address p a {
-    color: var(--body-text-color);
+    color: var(--primary-text-color);
     text-decoration: none;
     transition: color 0.3s;
 }
