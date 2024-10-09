@@ -4,64 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brock Altug's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for hover effects */
+        .skill-icon {
+            border: 2px solid #16273f;
+            padding: 8px;
+            border-radius: 16px;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+
+        .skill-icon:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+            border-color: #c9961e;
+        }
+
+        /* Navbar hover color transition */
+        nav ul li a:hover {
+            color: #c9961e;
+            transition: color 0.2s ease-in-out;
+        }
+
+        /* Parallax header effect */
+        header {
+            background-image: url('./assets/images/parallax.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Parallax text shadow */
+        header h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #d4d4d4;
+        }
+
+        /* Project hover effect */
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Body background and text color */
+        body {
+            background-color: #1a1a1a;
+            color: #d4d4d4;
+        }
+
+        /* Accent color for hover */
+        a:hover {
+            color: #c9961e;
+        }
+    </style>
 </head>
 <body>
-    <header>
+
+    <!-- Header Section with Parallax Image -->
+    <header class="p-6 shadow-md">
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="flex justify-center space-x-8 text-lg">
+                <li><a href="#about" class="hover:text-c9961e">About</a></li>
+                <li><a href="#work" class="hover:text-c9961e">Work</a></li>
+                <li><a href="#resume" class="hover:text-c9961e">Resume</a></li>
+                <li><a href="#contact" class="hover:text-c9961e">Contact</a></li>
             </ul>
         </nav>
-        <div class="header-content">
-            <h1>Brock Altug</h1>
-            <img src="assets/images/my-photo.png" alt="Photo of Me" class="avatar">
+        <div class="header-content text-center mt-8">
+            <h1 class="text-4xl font-bold text-white">Brock Altug</h1>
+            <img src="assets/images/my-photo.png" alt="Photo of Me" class="avatar w-32 h-32 rounded-full mx-auto mt-4 border-4 border-teal-500">
         </div>
     </header>
 
-    <main>
-        <section id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>Hi, I'm Brock Altug. I'm a developer passionate about learning and growing in the field of web development. Currently, I'm honing my skills in JavaScript, HTML, CSS, and exploring the latest trends in modern web design. I enjoy building interactive and responsive applications that provide a great user experience.</p>
+    <!-- Main Content -->
+    <main class="p-10">
+        <section id="about" class="mb-16 text-center">
+            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+            <p class="text-xl max-w-3xl mx-auto">Hi, I'm Brock Altug. I'm a developer passionate about learning and growing in the field of web development. Currently, I'm honing my skills in JavaScript, HTML, CSS, and exploring the latest trends in modern web design. I enjoy building interactive and responsive applications that provide a great user experience.</p>
         </section>
 
-        <section id="work" class="content-section">
-            <h2>My Work</h2>
-            <div class="projects">
-                <article class="project">
+        <section id="work" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-8">My Work</h2>
+            <div class="flex justify-center space-x-8 flex-wrap">
+                <article class="project bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
                     <a href="https://brockaltug.github.io/stu-css-units-font/">
-                        <img src="./assets/images/project-1.png" alt="Screenshot of First Application">
-                        <h3>Fun Facts</h3>
+                        <img src="./assets/images/project-1.png" alt="Screenshot of First Application" class="rounded-lg">
+                        <h3 class="text-xl mt-4">Fun Facts</h3>
                     </a>
                 </article>
-                <article class="project">
+                <article class="project bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
                     <a href="https://brockaltug.github.io/prework-study-guide/">
-                        <img src="./assets/images/project-2.png" alt="Screenshot of Second Application">
-                        <h3>Prework Study Guide</h3>
+                        <img src="./assets/images/project-2.png" alt="Screenshot of Second Application" class="rounded-lg">
+                        <h3 class="text-xl mt-4">Prework Study Guide</h3>
                     </a>
                 </article>
-                <article class="project">
+                <article class="project bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
                     <a href="https://brockaltug.github.io/semantic-webpage-refactor/">
-                        <img src="assets/images/project-3.png" alt="Screenshot of Third Application">
-                        <h3>Semantic Webpage Refactor</h3>
+                        <img src="assets/images/project-3.png" alt="Screenshot of Third Application" class="rounded-lg">
+                        <h3 class="text-xl mt-4">Semantic Webpage Refactor</h3>
                     </a>
                 </article>
             </div>
         </section>
 
-        <section id="contact" class="content-section">
-            <h2>Contact Me</h2>
-            <address>
-                <p>Email: <a href="mailto:brock.altug99@gmail.com">brock.altug99@gmail.com</a></p>
-                <p>Github: <a href="https://github.com/BrockAltug?tab=repositories" target="_blank">My Github Profile</a></p>
-            </address>
-        </section>
+        <!-- Resume Section -->
+        <section id="resume" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-8">Resume</h2>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <h3 class="text-2xl font-semibold mb-4">Brock Altug - SDET</h3>
+                <p class="text-lg mb-6">Experienced Software Development Engineer in Test (SDET). Skilled in Java, Selenium WebDriver, TestNG, Cucumber BDD, Maven, STLC, Jira, Scrum, Testing Types, and Test Planning. Proven track record in both manual and automation QA. Eager to contribute to a dynamic remote team and ensure the accuracy and reliability of software applications.</p>
+
+                <h4 class="text-xl font-semibold mb-4">Experience</h4>
+                <div class="space-y-4">
+                    <div>
+                        <p><strong>SDET, Nako Holding Company LLC</strong> — Jun 2023 - Present</p>
+                        <ul class="list-disc list-inside">
+                            <li>Developed and maintained automation frameworks using Java and Selenium WebDriver.</li>
+                            <li>Created and executed test scripts using TestNG and Cucumber BDD to ensure software applications meet quality standards.</li>
+                            <li>Collaborated with agile teams, developers, and product owners to support Scrum activities.</li>
+                            <li>Ensured comprehensive test coverage across various testing types (functional, regression, integration, and performance).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>Data Entry Specialist, Dlara Mediterranean Grill</strong> — Jun 2016 - Jan 2019</p>
+                        <ul class="list-disc list-inside">
+                            <li>Accurately updated and maintained records.</li>
+                            <li>Conducted data verification to ensure the accuracy of records and databases.</li>
+                            <li>Cleaned and corrected errors, inconsistencies, and duplicates in data entries.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h4 class="text-3xl text-center font-semibold my-6">Skills</h4>
+       <!-- Frontend Skills -->
+       <div class="mb-6 text-center">
+        <h5 class="text-lg font-semibold">Frontend</h5>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=css" alt="CSS" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=react" alt="React" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://jquery.com/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery" class="w-12 h-12 skill-icon" />
+            </a>
+        </div>
+    </div>
+
+    <!-- Backend Skills -->
+    <div class="mb-6 text-center">
+        <h5 class="text-lg font-semibold">Backend</h5>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=express" alt="Express.js" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://www.java.com/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=java" alt="Java" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=git" alt="Git" class="w-12 h-12 skill-icon" />
+            </a>
+            <a href="https://www.selenium.dev/" target="_blank" rel="noreferrer">
+                <img src="https://skillicons.dev/icons?i=selenium" alt="Selenium" class="w-12 h-12 skill-icon" />
+            </a>
+        </div>
+    </div>
+
+    <section id="contact" class="text-center mb-16">
+        <h2 class="text-3xl font-semibold mb-6">Contact Me</h2>
+        <address class="space-y-4">
+            <p>
+                <i class="fas fa-envelope text-yellow-400 mr-2"></i> 
+                Email: <a href="mailto:brock.altug99@gmail.com" class="hover:text-yellow-400">brock.altug99@gmail.com</a>
+            </p>
+            <p>
+                <i class="fab fa-github text-yellow-400 mr-2"></i> 
+                Github: <a href="https://github.com/BrockAltug?tab=repositories" target="_blank" class="hover:text-yellow-400">My Github Profile</a>
+            </p>
+        </address>
+    </section>
     </main>
 
-    <footer>
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 p-6 text-center text-white">
         <p>&copy; 2024 Brock Altug. All rights reserved.</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </body>
 </html>
