@@ -7,31 +7,48 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-        /* Parallax header effect */
-        header {
+       /* Parallax header effect */
+       header {
             background-image: url('./assets/images/parallax.png');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: 400px;
-            position: relative;
-            color: #ffffff;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             text-align: center;
+            color: #ffffff;
         }
-    
+
         /* Parallax text shadow */
         header h1 {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
-    
+
         /* Footer styling */
         footer {
             background-color: #333;
             color: #d4d4d4;
+        }
+
+        /* Ensure mobile responsiveness for project cards */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        /* Ensure section centering and consistent padding */
+        section {
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .max-w-xs {
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -64,20 +81,20 @@
 
         <section id="projects" class="mb-16">
             <h2 class="text-3xl font-semibold text-center mb-8">My Projects</h2>
-            <div class="flex justify-center space-x-8 flex-wrap"
-                <article class="project bg-gray-800 mt-5 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
+            <div class="projects-grid">
+                <article class="project bg-gray-800 mt-5 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
                     <a href="https://brockaltug.github.io/weather-dashboard/">
                         <img src="assets/images/project-1.png" alt="Screenshot of First Application" class="rounded-lg">
                         <h3 class="text-xl text-center mt-4">Weather Dashboard</h3>
                     </a>
                 </article>
-                <article class="project bg-gray-800 mt-5 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
+                <article class="project bg-gray-800 mt-5 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
                     <a href="https://brockaltug.github.io/prework-study-guide/">
                         <img src="./assets/images/project-2.png" alt="Screenshot of Second Application" class="rounded-lg">
                         <h3 class="text-xl text-center mt-4">Prework Study Guide</h3>
                     </a>
                 </article>
-                <article class="project bg-gray-800 mt-5 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
+                <article class="project bg-gray-800 mt-5 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all">
                     <a href="https://brockaltug.github.io/semantic-webpage-refactor/">
                         <img src="assets/images/project-3.png" alt="Screenshot of Third Application" class="rounded-lg">
                         <h3 class="text-xl text-center mt-4">Semantic Webpage Refactor</h3>
