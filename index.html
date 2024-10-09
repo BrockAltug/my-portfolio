@@ -9,23 +9,32 @@
     <style>
         /* Parallax header effect */
         header {
-            background-image: url('./assets/images/parallax.png');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #ffffff;
+          background-image: url('./assets/images/parallax.png');
+          background-attachment: fixed;
+          background-position: center;
+         background-repeat: no-repeat;
+          background-size: cover;
+         height: 400px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         color: #ffffff;
+        }
+
+        /* Parallax effect for mobile */
+        @media (max-width: 768px) {
+            header{
+                background-attachment: scroll; /* Change from fixed to scroll on mobile */
+                background-size: cover; /* Ensure the image still covers the screen */
+                height: 300px; /* Adjust height for smaller screens */
+            }
         }
 
         /* Parallax text shadow */
         header h1 {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+           text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         /* Footer styling */
