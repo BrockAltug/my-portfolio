@@ -73,6 +73,18 @@
                 grid-template-columns: 1fr; /* Stacks Frontend and Backend vertically */
             }
         }
+        /* Ensure text wraps and stays inside the container */
+        .experience-content {
+          word-wrap: break-word;
+           overflow-wrap: break-word;
+        }
+
+        /* Add padding to ensure the content fits within the container on mobile */
+        @media (max-width: 768px) { 
+          .experience-content {
+              font-size: 14px; /* Reduce font size for better fit on mobile */
+           }
+        }
 
         /* Remove descriptions for work and professional roles on mobile */
         @media (max-width: 768px) {
