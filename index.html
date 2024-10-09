@@ -7,8 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <style>
-       /* Parallax header effect */
-       header {
+        /* Parallax header effect */
+        header {
             background-image: url('./assets/images/parallax.png');
             background-attachment: fixed;
             background-position: center;
@@ -49,6 +49,33 @@
 
         .max-w-xs {
             margin: 0 auto;
+        }
+
+        /* Grid Layout for Frontend/Backend Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        /* Stack frontend and backend skills vertically on mobile */
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: 1fr; /* Stacks Frontend and Backend vertically */
+            }
+        }
+
+        /* Remove descriptions for work and professional roles on mobile */
+        @media (max-width: 768px) {
+            .experience-content ul {
+                display: none; /* Hides descriptions for work and professional roles on mobile */
+            }
+        }
+        /* Stack Frontend and Backend skills icons vertically on mobile */
+        @media (max-width: 768px) {
+            .skill-content .grid {
+               grid-template-columns: 1fr !important; /* Force one column layout */
+         }
         }
     </style>
 </head>
