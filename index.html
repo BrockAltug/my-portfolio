@@ -4,64 +4,329 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brock Altug's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">>
+    <style>
+        /* Parallax header effect */
+        header {
+            background-image: url('./assets/images/parallax.png');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    
+        /* Parallax text shadow */
+        header h1 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #d4d4d4;
+        }
+    </style>
 </head>
 <body>
-    <header>
+
+    <!-- Header Section with Parallax Image -->
+    <header class="p-6 shadow-md">
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="flex justify-center space-x-8 text-lg">
+                <li><a href="#about" class="hover:text-c9961e">About</a></li>
+                <li><a href="#projects" class="hover:text-c9961e">Projects</a></li>
+                <li><a href="#resume" class="hover:text-c9961e">Resume</a></li>
+                <li><a href="#contact" class="hover:text-c9961e">Contact</a></li>
             </ul>
         </nav>
-        <div class="header-content">
-            <h1>Brock Altug</h1>
-            <img src="assets/images/my-photo.png" alt="Photo of Me" class="avatar">
+        <div class="header-content text-center mt-8">
+            <h1 class="text-4xl font-bold text-white">Brock Altug</h1>
+            <img src="assets/images/my-photo.png" alt="Photo of Me" class="avatar w-32 h-32 rounded-full mx-auto mt-4 border-4 border-teal-500">
         </div>
     </header>
 
-    <main>
-        <section id="about" class="content-section">
-            <h2>About Me</h2>
-            <p>Hi, I'm Brock Altug. I'm a developer passionate about learning and growing in the field of web development. Currently, I'm honing my skills in JavaScript, HTML, CSS, and exploring the latest trends in modern web design. I enjoy building interactive and responsive applications that provide a great user experience.</p>
+    <!-- Main Content -->
+    <main class="p-10">
+        <section id="about" class="mb-16 text-center">
+            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+            <p class="text-xl max-w-3xl mx-auto">
+                Hello, I’m Brock Altug, a dedicated software developer with a strong focus on web development. I am continuously advancing my expertise in JavaScript, HTML, and CSS, while staying up-to-date with the latest innovations in modern web design and development. I am passionate about building high-quality, interactive, and responsive applications that prioritize user experience and performance.
+            </p>
         </section>
 
-        <section id="work" class="content-section">
-            <h2>My Work</h2>
-            <div class="projects">
-                <article class="project">
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-8">My Projects</h2>
+            <div class="flex justify-center space-x-8 flex-wrap">
+                <article class="project bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
                     <a href="https://brockaltug.github.io/stu-css-units-font/">
-                        <img src="./assets/images/project-1.png" alt="Screenshot of First Application">
-                        <h3>Fun Facts</h3>
+                        <img src="./assets/images/project-1.png" alt="Screenshot of First Application" class="rounded-lg">
+                        <h3 class="text-xl text-center mt-4">Fun Facts</h3>
                     </a>
                 </article>
-                <article class="project">
+                <article class="project bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
                     <a href="https://brockaltug.github.io/prework-study-guide/">
-                        <img src="./assets/images/project-2.png" alt="Screenshot of Second Application">
-                        <h3>Prework Study Guide</h3>
+                        <img src="./assets/images/project-2.png" alt="Screenshot of Second Application" class="rounded-lg">
+                        <h3 class="text-xl text-center mt-4">Prework Study Guide</h3>
                     </a>
                 </article>
-                <article class="project">
+                <article class="project bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all max-w-xs">
                     <a href="https://brockaltug.github.io/semantic-webpage-refactor/">
-                        <img src="assets/images/project-3.png" alt="Screenshot of Third Application">
-                        <h3>Semantic Webpage Refactor</h3>
+                        <img src="assets/images/project-3.png" alt="Screenshot of Third Application" class="rounded-lg">
+                        <h3 class="text-xl text-center mt-4">Semantic Webpage Refactor</h3>
                     </a>
                 </article>
             </div>
         </section>
 
-        <section id="contact" class="content-section">
-            <h2>Contact Me</h2>
-            <address>
-                <p>Email: <a href="mailto:brock.altug99@gmail.com">brock.altug99@gmail.com</a></p>
-                <p>Github: <a href="https://github.com/BrockAltug?tab=repositories" target="_blank">My Github Profile</a></p>
-            </address>
-        </section>
+        <!-- Resume Section -->
+        <section id="resume" class="mb-16">
+            <h2 class="text-3xl font-semibold text-center mb-8">Resume</h2>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
+                <h3 class="text-2xl text-center font-semibold mb-4"></h3>
+                <p class="text-lg text-center mb-6">
+                    Experienced software developer with a diverse skill set in both front-end and back-end development, automation testing, and quality assurance. Proficient in Java, JavaScript, HTML, CSS, Selenium WebDriver, TestNG, Cucumber BDD, and modern frameworks such as React and Node.js. Strong understanding of Agile methodologies, including Scrum and Jira, with proven experience in collaborating with cross-functional teams to deliver high-quality software solutions. Committed to continuous learning and contributing to dynamic remote teams by ensuring the efficiency, accuracy, and reliability of applications.
+                </p>
+
+           <!-- Experience Section -->
+<h4 class="text-3xl text-center font-semibold">Experience</h4>
+<section id="experience" class="p-10">
+    
+    <!-- Jobs Dropdown -->
+    <div class="experience-box">
+        <div class="experience-title" id="experienceTitle">
+            Work
+            <span class="dropdown-arrow" id="dropdownArrow">▼</span>
+        </div>
+        <div class="experience-content" id="experienceContent">
+            <div class="space-y-4">
+                <div>
+                    <p class="highlighted"><strong>Berkeley Bootcamp Student</strong> — Jan 2024 - Present</p>
+                    <ul class="list-disc list-inside">
+                        <li>Engaged in a full-stack web development program focused on JavaScript, Node.js, Express, React, and MongoDB.</li>
+                        <li>Collaborated with team members on real-world projects, simulating agile development environments.</li>
+                        <li>Gained in-depth knowledge of API development, RESTful services, and NoSQL databases like MongoDB.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>SDET, Nako Holding Company LLC</strong> — Jun 2023 - Present</p>
+                    <ul class="list-disc list-inside">
+                        <li>Spearheaded the development and maintenance of robust automation frameworks using Java and Selenium WebDriver.</li>
+                        <li>Designed and implemented test scripts using TestNG and Cucumber BDD.</li>
+                        <li>Facilitated seamless agile Scrum processes by collaborating with developers and product owners.</li>
+                        <li>Performed extensive regression, functional, integration, and performance testing, reducing bugs by 40%.</li>
+                        <li>Led automation best practices, increasing test coverage by 30%.</li>
+                        <li>Created test plans and tracked bugs using Jira, improving sprint retrospectives.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>SDET Intern, Mersys.io</strong> — Jan 2022 - Jun 2022</p>
+                    <ul class="list-disc list-inside">
+                        <li>Collaborated with QA teams to develop automated test suites using Java, Selenium WebDriver, and Maven.</li>
+                        <li>Built automated test scripts for key functionalities and API integrations.</li>
+                        <li>Gained experience in Cucumber BDD for test scenario development.</li>
+                        <li>Assisted in creating test data strategies and developed scripts for cross-browser testing.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>Data Entry Specialist, Dlara Mediterranean Grill</strong> — Jun 2016 - Jan 2019</p>
+                    <ul class="list-disc list-inside">
+                        <li>Managed large volumes of customer and financial data, ensuring accurate records.</li>
+                        <li>Conducted data verification audits, reducing errors by 20%.</li>
+                        <li>Suggested improvements to data entry processes, reducing manual times by 25%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Roles Dropdown -->
+    <div class="experience-box">
+        <div class="experience-title" id="roleTitle">
+            Professional Roles
+            <span class="dropdown-arrow" id="roleDropdownArrow">▼</span>
+        </div>
+        <div class="experience-content" id="roleContent">
+            <div class="space-y-4">
+                <div>
+                    <p class="highlighted"><strong>Full Stack Web Developer</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Proficient in front-end development with HTML, CSS, JavaScript, React.js, and Tailwind CSS.</li>
+                        <li>Experienced in building RESTful APIs and managing databases using Node.js, Express.js, and MongoDB.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>Software Development Engineer in Test (SDET)</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Skilled in developing automated testing frameworks and ensuring quality standards.</li>
+                        <li>Proficient in Java, Selenium WebDriver, TestNG, Cucumber BDD, and CI/CD pipelines.</li>
+                        <li>Collaborates with agile teams to deliver high-quality software solutions.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>Quality Assurance Engineer (QA Engineer)</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Expertise in designing and executing manual and automated test cases for web and mobile applications.</li>
+                        <li>Skilled in defect tracking, root cause analysis, and collaboration with cross-functional teams.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>Automation Test Engineer</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Proven ability to develop robust automation scripts and reusable libraries for regression testing.</li>
+                        <li>Adept at integrating tests into CI/CD pipelines for improved build quality.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>Agile Team Player</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Experienced in Scrum and Kanban methodologies, participating in daily stand-ups, sprint planning, and retrospectives.</li>
+                        <li>Committed to iterative development and continuous improvement in software quality.</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="highlighted"><strong>DevOps Collaboration</strong></p>
+                    <ul class="list-disc list-inside">
+                        <li>Skilled in working with DevOps teams to integrate test automation into CI/CD pipelines.</li>
+                        <li>Experienced with Jenkins, Docker, and GitLab for continuous integration and deployment.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<h4 class="text-3xl text-center font-semibold my-10">Languages / Tools</h4>
+
+<!-- Frontend Skills Dropdown -->
+<div class="skill-dropdown">
+    <div class="skill-title">
+        <h5 class="text-lg font-semibold cursor-pointer">Frontend<span class="dropdown-arrow">▼</span></h5>
+    </div>
+    <div class="skill-content">
+        <div class="grid grid-cols-4 gap-8 mt-4">
+            <div class="flex flex-col items-center">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=html" alt="HTML" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">HTML</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=css" alt="CSS" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">CSS</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=js" alt="JavaScript" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">JavaScript</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=react" alt="React" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">React</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=tailwind" alt="Tailwind CSS" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">Tailwind CSS</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=bootstrap" alt="Bootstrap" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">Bootstrap</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://jquery.com/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=jquery" alt="jQuery" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">jQuery</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Backend Skills Dropdown -->
+<div class="skill-dropdown">
+    <div class="skill-title">
+        <h5 class="text-lg font-semibold cursor-pointer">Backend<span class="dropdown-arrow">▼</span></h5>
+    </div>
+    <div class="skill-content">
+        <div class="grid grid-cols-4 gap-8 mt-4">
+            <div class="flex flex-col items-center">
+                <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node.js" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">Node.js</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=express" alt="Express.js" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">Express.js</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">MongoDB</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://www.java.com/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=java" alt="Java" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">Java</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=git" alt="Git" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">Git</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <a href="https://www.selenium.dev/" target="_blank" rel="noreferrer">
+                    <img src="https://skillicons.dev/icons?i=selenium" alt="Selenium" class="w-12 h-12 skill-icon border-2 border-gray-500 rounded-lg" />
+                </a>
+                <p class="mt-2 text-white">Selenium</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
     </main>
 
-    <footer>
-        <p>&copy; 2024 Brock Altug. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 p-4 text-center text-gray-300">
+        <section id="contact" class="text-center mt-6 mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+            <address class="space-y-2">
+                <p>
+                    <i class="fas fa-envelope text-yellow-400 mr-2"></i> 
+                    Email: <a href="mailto:brock.altug99@gmail.com" class="hover:text-yellow-400">brock.altug99@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fab fa-github text-yellow-400 mr-2"></i> 
+                    Github: <a href="https://github.com/BrockAltug" target="_blank" class="hover:text-yellow-400">My Github Profile</a>
+                </p>
+            </address>
+        </section>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
