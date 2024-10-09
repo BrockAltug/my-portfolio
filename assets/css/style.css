@@ -1,169 +1,155 @@
+/* Common container for dropdowns (skills, experience, roles) */
+.dropdown-container {
+    max-width: 100%; /* Full width */
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
 
-        /* Styles for Skills Dropdown */
-        .skill-title {
-            background-color: #2b2b2b;
-            padding: 1.25rem;
-            cursor: pointer;
-            border-radius: 8px;
-            border: 2px solid #444;
-            text-align: center;
-            font-size: 1.5rem; /* Match experience-title size */
-            color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-        }
-    
-        .skill-title:hover {
-            background-color: #3d3d3d;
-            color: #c9961e;
-        }
-    
-        .skill-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease, padding 0.3s ease;
-            background-color: #3d3d3d;
-            padding: 0 1.5rem; /* Consistent padding with other sections */
-            border: 2px solid #333;
-            border-top: none;
-            margin-top: 1rem;
-            border-radius: 8px;
-        }
-    
-        .skill-content.active {
-            max-height: 2000px; /* Consistent for all dropdowns */
-            padding: 1.5rem;
-            overflow: visible;
-        }
-    
-        /* Custom styles for hover effects */
-        .skill-icon {
-            border: 2px solid #16273f;
-            padding: 8px;
-            border-radius: 16px;
-            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
-        }
-    
-        .skill-icon:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-            border-color: #c9961e;
-        }
-    
-        /* Styles for Professional Roles Dropdown */
-        .role-title {
-            background-color: #2b2b2b;
-            padding: 1.25rem;
-            cursor: pointer;
-            border-radius: 8px;
-            border: 2px solid #444;
-            text-align: center;
-            font-size: 1.5rem; /* Match experience-title size */
-            color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-        }
-    
-        .role-title:hover {
-            background-color: #3d3d3d;
-            color: #c9961e;
-        }
-    
-        .role-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease, padding 0.3s ease;
-            background-color: #3d3d3d;
-            padding: 0 1.5rem; /* Start with 0 padding to avoid extra space */
-            border: 2px solid #333;
-            border-top: none;
-            margin-top: 1rem;
-            border-radius: 8px;
-        }
-    
-        .role-content.active {
-            max-height: 2000px; /* Adjusted for larger content */
-            padding: 1.5rem;
-            overflow: visible;
-        }
-    
-        /* Highlight for each role */
-        .highlighted {
-            background-color: #2b2b2b;
-            color: #c9961e;
-            padding: 0.5rem;
-            border-radius: 4px;
-        }
-    
-        /* Navbar hover color transition */
-        nav ul li a:hover {
-            color: #c9961e;
-            transition: color 0.2s ease-in-out;
-        }
-    
-        /* Project hover effect */
-        .project:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-    
-        /* Body background and text color */
-        body {
-            background-color: #1a1a1a;
-            color: #d4d4d4;
-        }
-    
-        /* Accent color for hover */
-        a:hover {
-            color: #c9961e;
-        }
-    
-        /* Styles for Experience Dropdown */
-        .experience-title {
-            background-color: #2b2b2b;
-            padding: 1.25rem;
-            cursor: pointer;
-            border-radius: 8px;
-            border: 2px solid #444;
-            text-align: center;
-            font-size: 1.5rem; /* Match skill-title size */
-            color: #fff;
-            transition: background-color 0.3s, color 0.3s;
-        }
-    
-        .experience-title:hover {
-            background-color: #3d3d3d;
-            color: #c9961e;
-        }
-    
-        .experience-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease, padding 0.3s ease;
-            background-color: #3d3d3d;
-            padding: 0 1.5rem; /* Start with 0 padding to avoid extra space */
-            border: 2px solid #333;
-            border-top: none;
-            margin-top: 1rem;
-            border-radius: 8px;
-        }
-    
-        .experience-content.active {
-            max-height: 2000px; /* Increased max-height for larger content */
-            padding: 1.5rem;   /* Add padding when active */
-            overflow: visible;  /* Allow the full content to display */
-        }
-    
-        .experience-content ul {
-            margin-top: 1rem;
-            padding-left: 1.5rem; /* Add padding for list items */
-        }
-    
-        .dropdown-arrow {
-            transition: transform 0.1s ease;
-            display: inline-block;
-            margin-left: 10px;
-        }
-    
-        .dropdown-arrow.rotate {
-            transform: rotate(180deg);
-        }
+/* Styles for Skills Dropdown */
+.skill-title, .experience-title {
+    background-color: #2b2b2b;
+    padding: 1.25rem;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #444;
+    text-align: center;
+    font-size: 1.5rem; /* Uniform size for skill and experience titles */
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-title:hover, .experience-title:hover {
+    background-color: #3d3d3d;
+    color: #c9961e;
+}
+
+.skill-content, .experience-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+    background-color: #3d3d3d;
+    padding: 0 1.5rem; /* Consistent padding with other sections */
+    border: 2px solid #333;
+    border-top: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    max-width: 800px; /* Set uniform width */
+    margin: 0 auto;
+}
+
+.skill-content.active, .experience-content.active {
+    max-height: 2000px;
+    padding: 1.5rem;
+    overflow: visible;
+}
+
+/* Custom styles for hover effects */
+.skill-icon {
+    border: 2px solid #16273f;
+    padding: 8px;
+    border-radius: 16px;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.skill-icon:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    border-color: #c9961e;
+}
+
+/* Highlight for each role */
+.highlighted {
+    background-color: #2b2b2b;
+    color: #c9961e;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Navbar hover color transition */
+nav ul li a:hover {
+    color: #c9961e;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Project hover effect */
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Body background and text color */
+body {
+    background-color: #1a1a1a;
+    color: #d4d4d4;
+}
+
+/* Accent color for hover */
+a:hover {
+    color: #c9961e;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #d4d4d4;
+}
+
+/* Ensure mobile responsiveness for project cards */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Ensure section centering and consistent padding */
+section {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.max-w-xs {
+    margin: 0 auto;
+}
+
+/* Grid Layout for Frontend/Backend Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Stack frontend and backend skills vertically on mobile */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stacks Frontend and Backend vertically */
+    }
+}
+
+/* Ensure text wraps and stays inside the container */
+.experience-content {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Add padding to ensure the content fits within the container on mobile */
+@media (max-width: 768px) { 
+    .experience-content {
+        font-size: 14px; /* Reduce font size for better fit on mobile */
+    }
+}
+
+/* Remove descriptions for work and professional roles on mobile */
+@media (max-width: 768px) {
+    .experience-content ul {
+        display: none; /* Hides descriptions for work and professional roles on mobile */
+    }
+}
+
+/* Stack Frontend and Backend skills icons vertically on mobile */
+@media (max-width: 768px) {
+    .skill-content .grid {
+        grid-template-columns: 1fr !important; /* Force one column layout */
+    }
+}

@@ -37,67 +37,6 @@
            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
-        /* Footer styling */
-        footer {
-            background-color: #333;
-            color: #d4d4d4;
-        }
-
-        /* Ensure mobile responsiveness for project cards */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        /* Ensure section centering and consistent padding */
-        section {
-            padding: 0 20px;
-            text-align: center;
-        }
-
-        .max-w-xs {
-            margin: 0 auto;
-        }
-
-        /* Grid Layout for Frontend/Backend Skills */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
-
-        /* Stack frontend and backend skills vertically on mobile */
-        @media (max-width: 768px) {
-            .skills-grid {
-                grid-template-columns: 1fr; /* Stacks Frontend and Backend vertically */
-            }
-        }
-        /* Ensure text wraps and stays inside the container */
-        .experience-content {
-          word-wrap: break-word;
-           overflow-wrap: break-word;
-        }
-
-        /* Add padding to ensure the content fits within the container on mobile */
-        @media (max-width: 768px) { 
-          .experience-content {
-              font-size: 14px; /* Reduce font size for better fit on mobile */
-           }
-        }
-
-        /* Remove descriptions for work and professional roles on mobile */
-        @media (max-width: 768px) {
-            .experience-content ul {
-                display: none; /* Hides descriptions for work and professional roles on mobile */
-            }
-        }
-        /* Stack Frontend and Backend skills icons vertically on mobile */
-        @media (max-width: 768px) {
-            .skill-content .grid {
-               grid-template-columns: 1fr !important; /* Force one column layout */
-         }
-        }
     </style>
 </head>
 <body>
