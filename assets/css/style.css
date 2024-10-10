@@ -37,6 +37,11 @@
     max-width: 800px; /* Set uniform width */
     margin: 0 auto;
 }
+.skill-dropdown {
+    max-width: 1400px; /* This sets the width of the container */
+    margin: 0 auto;
+    padding: 0 1.5rem; /* Adjust the padding if necessary */
+}
 
 .skill-content.active, .experience-content.active {
     max-height: 2000px;
