@@ -1,10 +1,10 @@
-<h1 align="center">Hi 👋, I'm Brock Altug</h1>
+<h1 align="center">Hi, I'm Brock Altug</h1>
 <h2 align="center">A Passionate Full Stack Web Developer from Washington</h2>
-<h2 align="center">🚀 Open for new job opportunities, no experience required! 🚀</h2>
+<h2 align="center">Open for new job opportunities, no experience required!</h2>
 <h3 align="center">I’m currently studying the Berkeley Fullstack Computer Science Course</h3>
-<h3 align="center">💬 Ask me anything!</h3>
+<h3 align="center">Ask me anything!</h3>
 
-<h3 align="center">🌐 My Portfolio</h3>
+<h3 align="center">My Portfolio</h3>
 <p align="center">
   <a href="https://brockaltug.github.io/my-portfolio/" target="_blank" rel="noreferrer">
     <img src="https://img.shields.io/badge/View%20Portfolio-FF5733?style=for-the-badge&logo=About.me&logoColor=white" alt="Portfolio" />
