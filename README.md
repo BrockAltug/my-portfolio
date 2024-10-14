@@ -30,6 +30,12 @@ A semantic, accessible webpage template with a focus on clean code and web stand
 
 - **Technologies:** HTML, CSS, JavaScript, SEO
 
+### 4. [📈 SEO Roadmap](https://brockaltug.github.io/seo-roadmap/)
+
+The **SEO Roadmap** is a comprehensive guide for businesses and website owners to develop an effective and tailored SEO strategy. It covers key aspects like keyword research, on-page SEO, technical optimization, and off-page strategies, helping you systematically enhance your website’s search rankings and visibility.
+
+- **Technologies:** HTML, CSS, SEO, Content Strategy, Google Analytics
+
 ## Resume 📄
 
 Experienced in both front-end and back-end development, testing, and automation frameworks. Proficient in HTML, CSS, JavaScript, Java, Selenium, TestNG, and modern web frameworks like React and Node.js. I have a solid understanding of Agile methodologies and collaboration within cross-functional teams.
