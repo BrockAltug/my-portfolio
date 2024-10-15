@@ -37,7 +37,7 @@ Real-time predictions for soccer matches using head-to-head results, player stat
 A fun and interactive slot machine game with a responsive design. Users can spin the reels and win rewards.  
  **Technologies:** HTML, CSS, JavaScript
 
-### 6. [📜 Random Quote Generator](https://brockaltug.github.io/random-quote-generator/):
+### 6. [💭 Random Quote Generator](https://brockaltug.github.io/random-quote-generator/):
 
 An elegant and interactive random quote generator that fetches quotes from various categories, displaying them with animated backgrounds and smooth transitions.  
  **Technologies:** HTML, CSS, JavaScript, Tailwind CSS, API Ninjas Quotes API
