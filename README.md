@@ -15,12 +15,12 @@ Hello, I’m Brock Altug, a passionate full-stack web developer and automation t
 ### 1. [📈 SEO Roadmap](https://brockaltug.github.io/seo-roadmap/):
 
 A guide for businesses and website owners to develop an effective and tailored SEO strategy.  
- **Technologies:** HTML, CSS, SEO, Content Strategy, Google Analytics
+ **`Technologies:`** HTML, CSS, SEO, Content Strategy, Google Analytics
 
 ### 2. [🌐 Semantic Webpage Template](https://brockaltug.github.io/semantic-webpage-template/):
 
 A semantic, accessible webpage template with a focus on clean code and web standards.  
- **Technologies:** HTML, CSS, JavaScript, SEO
+ **`Technologies:`** HTML, CSS, JavaScript, SEO
 
 ### 3. [🏢 Company Landing Page Template](https://brockaltug.github.io/company-landing-page/):
 
@@ -30,17 +30,22 @@ A modern and responsive company landing page template, featuring a sleek design 
 ### 4. [⚽ Soccer Match Tracker](https://brockaltug.github.io/soccer-predictions/):
 
 Real-time predictions for soccer matches using head-to-head results, player stats, and team form.  
- **Technologies:** JavaScript, HTML5, CSS3, API Integration, Local Storage
+ **`Technologies:`** JavaScript, HTML5, CSS3, API Integration, Local Storage
 
 ### 5. [🎰 Slot Machine Game](https://brockaltug.github.io/slot-machine/):
 
 A fun and interactive slot machine game with a responsive design. Users can spin the reels and win rewards.  
- **Technologies:** HTML, CSS, JavaScript
+ **`Technologies:`** HTML, CSS, JavaScript
 
 ### 6. [💭 Random Quote Generator](https://brockaltug.github.io/random-quote-generator/):
 
 An elegant and interactive random quote generator that fetches quotes from various categories, displaying them with animated backgrounds and smooth transitions.  
- **Technologies:** HTML, CSS, JavaScript, Tailwind CSS, API Ninjas Quotes API
+**`Technologies:`** HTML, CSS, JavaScript, Tailwind CSS, API Ninjas Quotes API
+
+### 7. [🌦️ Weather Dashboard](https://brockaltug.github.io/weather-dashboard/):
+
+A sleek weather dashboard that allows users to search for weather conditions in any city and view a 5-day forecast. The app dynamically updates based on user searches and stores the search history using local storage.  
+**`Technologies:`** HTML, CSS, JavaScript, OpenWeather API, Local Storage
 
 ## Resume 📄
 
