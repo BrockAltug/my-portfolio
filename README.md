@@ -4,9 +4,9 @@
 
 ## About Me
 
-Hello, I’m Brock Altug, a passionate Full Stack Developer and Tester from Washington, constantly expanding my skills and exploring exciting new opportunities. With a focus on modern web development, I build interactive, high-quality, and responsive applications that prioritize user experience and performance.
+Hello, I’m Brock Altug, a passionate full-stack web developer and automation tester currently studying the Berkeley Fullstack Computer Science Course. Experienced in both front-end and back-end development, testing, and automation frameworks. Proficient in HTML, CSS, JavaScript, Java, Selenium, TestNG, and modern web frameworks like React and Node.js. I have a solid understanding of Agile methodologies and thrive in collaborative, cross-functional teams. My expertise spans developing powerful applications, automation testing, and contributing to open-source projects. I’m always eager to explore the latest technologies in web development, AI, and automation.
 
-- 🌐 **Location:** Auburn, Washington
+- 🌐 **Location:** Washington
 - 💻 **Looking for:** Remote opportunities
 - 💡 **Skills:** Full Stack Web Development, Software Testing, Automation Frameworks
 
