@@ -36,6 +36,12 @@ The **SEO Roadmap** is a comprehensive guide for businesses and website owners t
 
 - **Technologies:** HTML, CSS, SEO, Content Strategy, Google Analytics
 
+### 5. [⚽ Soccer Match Tracker](https://brockaltug.github.io/soccer-predictions/)
+
+The **Soccer Predictions** app provides real-time predictions for upcoming soccer matches, analyzing head-to-head results, player statistics, and team form to deliver accurate predictions. The app uses data from live sports APIs and incorporates machine learning models to forecast match outcomes, including win probabilities and over/under score predictions.
+
+- **Technologies:** JavaScript, HTML5, CSS3, API Integration, Local Storage
+
 ## Resume 📄
 
 Experienced in both front-end and back-end development, testing, and automation frameworks. Proficient in HTML, CSS, JavaScript, Java, Selenium, TestNG, and modern web frameworks like React and Node.js. I have a solid understanding of Agile methodologies and collaboration within cross-functional teams.
