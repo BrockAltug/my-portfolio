@@ -12,35 +12,35 @@ Hello, I’m Brock Altug, a passionate full-stack web developer and automation t
 
 ## My Projects 🚀
 
-### 1. [🎰 Slot Machine Game](https://brockaltug.github.io/slot-machine/)
+### 1. [📈 SEO Roadmap](https://brockaltug.github.io/seo-roadmap/):
 
-A fun and interactive slot machine game with a responsive design. Users can spin the reels and win rewards.
+A guide for businesses and website owners to develop an effective and tailored SEO strategy.  
+ **Technologies:** HTML, CSS, SEO, Content Strategy, Google Analytics
 
-- **Technologies:** HTML, CSS, JavaScript
+### 2. [🌐 Semantic Webpage Template](https://brockaltug.github.io/semantic-webpage-template/):
 
-### 2. [🏢 Company Landing Page Template](https://brockaltug.github.io/company-landing-page/)
+A semantic, accessible webpage template with a focus on clean code and web standards.  
+ **Technologies:** HTML, CSS, JavaScript, SEO
 
-A modern and responsive company landing page template, featuring a sleek design and easy-to-navigate sections.
+### 3. [🏢 Company Landing Page Template](https://brockaltug.github.io/company-landing-page/):
 
-- **Technologies:** HTML, CSS, Tailwind CSS
+A modern and responsive company landing page template, featuring a sleek design and easy-to-navigate sections.  
+ **Technologies:** HTML, CSS, Tailwind CSS
 
-### 3. [🌐 Semantic Webpage Template](https://brockaltug.github.io/semantic-webpage-template/)
+### 4. [⚽ Soccer Match Tracker](https://brockaltug.github.io/soccer-predictions/):
 
-A semantic, accessible webpage template with a focus on clean code and web standards.
+Real-time predictions for soccer matches using head-to-head results, player stats, and team form.  
+ **Technologies:** JavaScript, HTML5, CSS3, API Integration, Local Storage
 
-- **Technologies:** HTML, CSS, JavaScript, SEO
+### 5. [🎰 Slot Machine Game](https://brockaltug.github.io/slot-machine/):
 
-### 4. [📈 SEO Roadmap](https://brockaltug.github.io/seo-roadmap/)
+A fun and interactive slot machine game with a responsive design. Users can spin the reels and win rewards.  
+ **Technologies:** HTML, CSS, JavaScript
 
-The **SEO Roadmap** is a comprehensive guide for businesses and website owners to develop an effective and tailored SEO strategy. It covers key aspects like keyword research, on-page SEO, technical optimization, and off-page strategies, helping you systematically enhance your website’s search rankings and visibility.
+### 6. [📜 Random Quote Generator](https://brockaltug.github.io/random-quote-generator/):
 
-- **Technologies:** HTML, CSS, SEO, Content Strategy, Google Analytics
-
-### 5. [⚽ Soccer Match Tracker](https://brockaltug.github.io/soccer-predictions/)
-
-The **Soccer Predictions** app provides real-time predictions for upcoming soccer matches, analyzing head-to-head results, player statistics, and team form to deliver accurate predictions. The app uses data from live sports APIs and incorporates machine learning models to forecast match outcomes, including win probabilities and over/under score predictions.
-
-- **Technologies:** JavaScript, HTML5, CSS3, API Integration, Local Storage
+An elegant and interactive random quote generator that fetches quotes from various categories, displaying them with animated backgrounds and smooth transitions.  
+ **Technologies:** HTML, CSS, JavaScript, Tailwind CSS, API Ninjas Quotes API
 
 ## Resume 📄
 
